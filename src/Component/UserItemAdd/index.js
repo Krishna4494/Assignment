@@ -44,9 +44,6 @@ export default function UserItemAdd (props) {
 
     const handleChange =(key) =>(event)=>{
       setValue({ ...value, [key]: event.target.value });
-      if(key === 'title' || key === 'body'){
-        setValue({...value, [key]:event.target.value.replace(/[^A-Za-z]/ig, '')})
-      }
     }
 
     function deleteItem(id) {
